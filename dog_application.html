@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dog Adoption Application</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body{
+            padding: 20px;
+        }
+
+        h1{
+            color:navy;
+        }
+
+        div{
+            color:navy
+        }
+        h2{
+          color:navy;
+          
+        }
+        p{
+          color:navy;
+        }
+    </style>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <h1>Dog Adoption Application</h1>
+    <br />
+    <div class="alert alert-primary" role="alert">
+        <h2>Before you apply:</h2>
+        <p>WE ONLY ADOPT TO KENTUCKY, INDIANA, AND OHIO</p>
+        <p>Any information found to be incorrect may result in this application being denied.<br>
+            You will receive an email confirmation that your form has been completed successfully.<br>
+            If your application is approved we will notify you by email on a date and time to come meet the pet.<br>
+            We accept cash or check only for adoption fees.<br>
+            <br />
+            Thank you for adopting a pet in need!<br></p>
+    </div>
+    <form>
+        <h2>General Information</h2>
+        <br />
+        <div class="row g-3">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+            </div>
+        </div>
+        <br />
+
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPhone" class="form-label">Phone Number</label>
+                <input type="number" class="form-control" id="inputPhone">
+            </div>
+        </div>
+
+        <div class="col-12">
+            <label for="inputAddress" class="form-label">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="col-12">
+            <label for="inputAddress2" class="form-label">Address 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div>
+
+        <div class="row g-3">
+            <div class="col-md-6">
+            <label for="inputCity" class="form-label">City</label>
+            <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+            <label for="inputState" class="form-label">State</label>
+            <select id="inputState" class="form-select">
+                <option selected>Choose...</option>
+                <option>KY</option>
+                <option>IN</option>
+                <option>OH</option>
+            </select>
+            </div>
+        </div>
+
+        <div class="row g-3">
+            <div class="col-md-2">
+            <label for="inputZip" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-md-4">
+            <label for="inputCounty" class="form-label">County</label>
+            <input type="text" class="form-control" id="inputCounty">
+            </div>
+        </div>
+        <div class="row g-3">
+            <div class="col-md-2">
+            <label for="inputAge" class="form-label">Age</label>
+            <input type="number" class="form-control" id="inputAge">
+            </div>
+            <div class="col-4">
+            <label for="inputDog" class="form-label">What dog are you interested in?</label>
+            <input type="text" class="form-control" id="inputDog" placeholder="Name">
+            </div>
+            <div class="col-4">
+                <p>Dog Breed</p>
+                <select class="form-select">
+                    <option selected>Please select</option>
+                    <option value="Akita">Akita</option>
+                    <option value="Alaskan">Alaskan Malamute</option>
+                    <option value="Australian">Australian Cattle Dog</option>
+                </select>
+                <p>Select "Other" if interested in multiple dogs</p>
+            </div>
+        </div>
+        <br />
+        <hr>
+
+
+        <h2>Home Enviornment</h2>
+        <br />
+        <div class="row g-3">
+            <div class="col-md-6">
+                <p>Do you live in a:</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioHouse" id="flexRadioHouse">
+                    <label class="form-check-label" for="flexRadioHouse">
+                    House
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioApartment" id="flexRadioApartment">
+                    <label class="form-check-label" for="flexRadioApartment">
+                    Apartment
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioTownhouse" id="flexRadioTownhouse">
+                    <label class="form-check-label" for="flexRadioTownhouse">
+                    Townhouse
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioCondo" id="flexRadioCondo">
+                    <label class="form-check-label" for="flexRadioCondo">
+                    Condo
+                    </label>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <label for="inputHome" class="form-label">Do you rent, lease, or own your home? (We will verify your residency)</label>
+                <input type="text" class="form-control" id="inputHome">
+                <p>If you are not the property owner, we will need their information.</p>
+            </div>
+        </div>
+        <br />
+        <div class="row g-3">
+            <div class="col-md-6">
+            <label for="inputLandlord" class="form-label">Landlord Name</label>
+            <input type="email" class="form-control" id="inputEmail4">
+            <p>We will seek landlord approval to place a SAAP pet in youe home</p>
+            </div>
+            <div class="col-md-6">
+            <label for="inputLandlordPhone" class="form-label">Landlord Phone Number</label>
+            <input type="number" class="form-control" id="inputLandlordPhone">
+            </div>
+        </div>
+
+        <div class="row g-3">
+            <div class="col-md-6">
+                <p>Do you have a fenced yard?</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioYesFence" id="flexRadioYes">
+                    <label class="form-check-label" for="flexRadioYes">
+                    Yes
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioNoFence" id="flexRadioNo">
+                    <label class="form-check-label" for="flexRadioNo">
+                    No
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="inputFenceInfo" class="form-label">If you answered YES, what type and size fence?</label>
+                <label for="inputFenceInfo" class="form-label">If you answered NO, how do you plan to keep the dog in your yard?</label>
+                <textarea class="form-control" id="FenceInfo" rows="3" ></textarea>
+            </div>
+        </div>
+        <br />
+
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label for="inputStairs" class="form-label">How many stairs do you have to get to your yard?</label>
+                <input type="number" class="form-control" id="inputStairs">
+            </div>
+                
+
+            <div class="col-md-6">
+                <p>Does your home have a pet/dog door?</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioYesDogDoor" id="flexRadioYes">
+                    <label class="form-check-label" for="flexRadioYes">
+                    Yes
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioNoDogDoor" id="flexRadioNo">
+                    <label class="form-check-label" for="flexRadioNo">
+                    No
+                    </label>
+                </div>
+            </div>
+        </div>
+        <br />
+
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label for="inputOtherAdults" class="form-label">Are there any other adults living at your address? If so please list their names.</label>
+                <textarea class="form-control" id="OtherAdults" rows="3" ></textarea>
+            </div>
+            <div class="col-md-3">
+                <p>Are there children in the home?</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioYesChild" id="flexRadioYes">
+                    <label class="form-check-label" for="flexRadioYes">
+                    Yes
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioNoChild" id="flexRadioNo">
+                    <label class="form-check-label" for="flexRadioNo">
+                        No
+                    </label>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <label for="inputChildAge" class="form-label">If yes, what are their ages?</label>
+                <input type="number" class="form-control" id="inputChildAge">
+            </div>
+        </div>
+        
+        <br />
+        <hr>
+
+
+        <h2>Pet Information</h2>
+        <br />
+        <div class="row g-3">
+            <div class="col-md-7">
+            <p>Have you ever given up a pet?</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioYesGivenUp" id="flexRadioYes">
+                <label class="form-check-label" for="flexRadioYes">
+                Yes
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioNoGivenUp" id="flexRadioNo">
+                <label class="form-check-label" for="flexRadioNo">
+                No
+                </label>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <label for="inputGivenUpPet" class="form-label">If yes, why and where did you take it?</label>
+            <textarea class="form-control" id="WhyWherePetTaken" rows="3" ></textarea>
+            </div>
+        </div>
+
+        <div class="row g-3">
+            <div class="col-md-7">
+            <p>Have you ever been issued a citation for your pet or had to reclaim your pet from animal control/shelter?</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioYesCitation" id="flexRadioYes">
+                <label class="form-check-label" for="flexRadioYes">
+                Yes
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioNoCitation" id="flexRadioNo">
+                <label class="form-check-label" for="flexRadioNo">
+                No
+                </label>
+            </div>
+            </div>
+            <div class="col-md-4">
+                <label for="inputCitation" class="form-label">If yes, please explain.</label>
+                <textarea class="form-control" id="ExplainCitation" rows="3" ></textarea>
+            </div>
+        </div>
+
+        <div class="col-md-7">
+            <label for="inputPreviousPet" class="form-label">List any previous and current pets you have including their sex, age, current health condition or cause of death and if they were/are spayed or neutered.</label>
+            <textarea class="form-control" id="PreviousPet" rows="3" ></textarea>
+        </div>
+        <br />
+
+        <div class="row g-3">
+            <div class="col-md-6">
+                <p>When you are NOT home, where will your pet stay?</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="IndoorsWithAccess" id="flexCheckIndoorsWithAcces">
+                    <label class="form-check-label" for="flexCheckIndoorsWithAccess">
+                        Indoors with access to go outside
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Indoors" id="flexCheckIndoors">
+                    <label class="form-check-label" for="flexCheckIndoors">
+                        Indoors with free roam of house
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Crate" id="flexCheckCrate">
+                    <label class="form-check-label" for="flexCheckCrate">
+                        Indoors in a crate
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="OutsideAccess" id="flexCheckOutsideAccess">
+                    <label class="form-check-label" for="flexCheckOutsideAccess">
+                        Outside with access to indoor area/shelter
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Outdoors" id="flexCheckOutdoors">
+                    <label class="form-check-label" for="flexCheckOutdoors">
+                        Strictly Outdoors
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Other" id="flexCheckOther">
+                    <label class="form-check-label" for="flexCheckOther">
+                        Other
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="inputLocationNotHome" class="form-label">Please Explain your answer with as much information as possible.</label>
+                <textarea class="form-control" id="LocationNotHome" rows="3" ></textarea>
+            </div>
+        
+            <div class="col-md-6">
+            <label for="inputDay" class="form-label">Where will the pet stay during the day?</label>
+            <input type="text" class="form-control" id="inputDay">
+            </div>
+            <div class="col-md-6">
+            <label for="inputNight" class="form-label">Where will the pet stay during the night?</label>
+            <input type="text" class="form-control" id="inputNight">
+            </div>
+        </div>
+        <br />
+
+        <div class="row g-3">
+            <div class="col-md-6">
+                <p>Will your pet be crated?</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioYesCrate" id="flexRadioYes">
+                    <label class="form-check-label" for="flexRadioYes">
+                    Yes
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioNoCrate" id="flexRadioNo">
+                    <label class="form-check-label" for="flexRadioNo">
+                    No
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="inputCrateInfo" class="form-label">If you answered YES to crating your pet, please give a description on how and when the dog will be crated.</label>
+                <label for="inputCrateInfo" class="form-label">If you answered NO to crating your pet, where do you plan to keep your pet while away from the home, especially while potty training?</label>
+                <textarea class="form-control" id="CrateInfo" rows="3" ></textarea>
+            </div>
+        </div>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label for="inputHoursAlone" class="form-label">How many hours per day will the pet be left alone?</label>
+                <input type="number" class="form-control" id="inputHours Alone">
+            </div>
+        
+            <div class="col-md-6">
+                <label for="inputMove" class="form-label">If you have to move, what would you do with your adopted pet?</label>
+                <textarea class="form-control" id="Move" rows="3" ></textarea>
+            </div>
+        </div>
+        <br />
+        <div class="row g-3">
+            <div class="col-md-6">
+                <p>Can you financially afford the Veterinarian costs of your new pet?</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioYesVet" id="flexRadioYes">
+                    <label class="form-check-label" for="flexRadioYes">
+                    Yes
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioNoVet" id="flexRadioNo">
+                    <label class="form-check-label" for="flexRadioNo">
+                    No
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="inputVetPhone" class="form-label">Your current Vet and phone number</label>
+                <input type="text" class="form-control" id="inputVetPhone">
+            </div>
+        </div>
+        <br />
+        <div class="row g-3">
+            <div class="col-md-6">
+            <p>Are you ready for a possible 20 year commitment?</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioYescommitted" id="flexRadioYes">
+                <label class="form-check-label" for="flexRadioYes">
+                Yes
+                </label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioNoCommitted" id="flexRadioNo">
+                <label class="form-check-label" for="flexRadioNo">
+                No
+                </label>
+            </div>
+            </div>
+            <div class="col-md-6">
+                <label for="inputSurrender" class="form-label">What circumstance would you have to surrender your pet? Divorce? New baby? Allergies? Aggression? Housebreaking issues?</label>
+                <textarea class="form-control" id="SurrenderPet" rows="3" ></textarea>
+            </div>
+        </div>
+
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label for="inputHousebreak " class="form-label">Please describe the method you plan to use to housebreak the dog. (frequent trips outside, pads, bell, etc)</label>
+                <textarea class="form-control" id="Housebreak" rows="3" ></textarea>
+            </div>
+            <div class="col-md-6">
+                <label for="inputObediance" class="form-label">Have you ever taken a dog through obedience class? Do you plan to take this one?</label>
+                <textarea class="form-control" id="Obediance" rows="3" ></textarea>
+            </div>
+        </div>
+        <br />
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label for="EnergyLevelRange" class="form-label">What energy level are you looking for in a pet?</label>
+                <input type="range" class="form-range" id="EnergyLevelRange">
+            </div>
+        </div>
+
+        <br />
+        <hr>
+
+
+        <h2>Please list 2 references</h2>
+        <br />
+        <p>Reference 1</p>
+        <div class="row g-3">
+            <div class="col">
+            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+            </div>
+            <div class="col">
+            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+            </div>
+        </div>
+        <br />
+                    
+        <div class="row g-3">
+            <div class="col-md-6">
+            <label for="inputReference1Email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputReference1Email">
+            </div>
+            <div class="col-md-6">
+            <label for="inputReference1Phone" class="form-label">Phone Number</label>
+            <input type="number" class="form-control" id="inputReference1Phone">
+            </div>
+        </div>
+        <br />
+
+        <p>Reference 2</p>
+        <div class="row g-3">
+            <div class="col">
+            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+            </div>
+            <div class="col">
+            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+            </div>
+        </div>
+        <br />
+                    
+        <div class="row g-3">
+            <div class="col-md-6">
+            <label for="inputReference2Email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputReference2Email">
+            </div>
+            <div class="col-md-6">
+            <label for="inputReference2Phone" class="form-label">Phone Number</label>
+            <input type="number" class="form-control" id="inputReference2Phone">
+            </div>
+        </div>
+                    
+        <br />
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+
+    </form>
+  </body>
+</html>
