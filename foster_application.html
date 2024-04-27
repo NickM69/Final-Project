@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Foster Application</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <style>
+            body{
+                padding: 20px;
+            }
+    
+            h1{
+                color:navy;
+            }
+    
+            div{
+                color:navy
+            }
+            h2{
+              color:navy;
+              
+            }
+            p{
+              color:navy;
+            }
+            h3{
+                color:navy
+            }
+        </style>
+    </head>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <nav class="navbar bg-body-tertiary">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#">
+                        <img src="https://images.squarespace-cdn.com/content/v1/653a83dba18bd23a177b3034/a281b0ec-1c0a-41b5-9625-aaf78c7f96bc/SAAP_LOGO_-01.png?format=1500w" alt="Logo" width="50" height="44" class="d-inline-block align-text-top">
+                      </a>
+                    </div>
+                </nav>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Volunteer.html">Volunteer</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="UpcomingEvents.html">Upcoming Events</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="AdoptAnimals.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Adopt Animals
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Cat adoption</a></li>
+                      <li><a class="dropdown-item" href="#">Cat surrender</a></li>
+                      <li><a class="dropdown-item" href="#">Dog adoption</a></li>
+                      <li><a class="dropdown-item" href="#">Dog surrender</a></li>
+                      <li><a class="dropdown-item" href="#">Foster application</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Fundraising.html">Fundraising</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        <h1>Foster Application</h1>
+        <div class="alert alert-primary" role="alert">
+            <h2>Before you complete this form:</h2>
+            <h3>Thank you for your interest in fostering with SAAP!</h3>
+            <p>Please fill out this application if you are interested in fostering dogs, cats, or both! </p>
+            <p>Foster applications are free to complete with no obligation to foster. </p>
+            <p>When you foster with SAAP you pick the age, breed, size, how many, and how often you have an animal in your home.</p>
+            <p>Foster applicants must be 21 years or older.</p>
+            <p>Most foster applications are reviewed within approximately 72 hours, but landlord checks and other factors may lengthen the review timeline. </p>
+        </div>
+        <br>
+        <form>
+            <div class="row g-3">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                </div>
+            </div>
+            <br />
+
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputPhone" class="form-label">Phone Number</label>
+                    <input type="number" class="form-control" id="inputPhone">
+                </div>
+            </div>
+
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress2" class="form-label">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label for="inputCity" class="form-label">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputState" class="form-label">State</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Choose...</option>
+                        <option>KY</option>
+                        <option>IN</option>
+                        <option>OH</option>
+                    </select>
+                </div>
+            </div>
+            <br />
+
+            <div class="row g-3">
+                <div class="col-md-2">
+                    <label for="inputZip" class="form-label">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputCounty" class="form-label">County</label>
+                    <input type="text" class="form-control" id="inputCounty">
+                </div>
+
+                <div class="col-md-4">
+                    <label for="inputDOB" class="form-label">Date of Birth</label>
+                    <input type="date" class="form-control" id="inputDOB">
+                </div>
+            </div>
+            <br />
+            <hr>
+
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <p>What type of animals are you interested in fostering? Select all that apply.</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDog">
+                        <label class="form-check-label" for="flexCheckDog">
+                          Dog
+                        </label>
+                    </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckPuppies">
+                        <label class="form-check-label" for="flexCheckPuppies">
+                          Puppies
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckMomsPuppies">
+                        <label class="form-check-label" for="flexCheckMomsPuppies">
+                          Pregnant/Nursing Moms & Puppies
+                        </label>
+                    </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckMedical">
+                        <label class="form-check-label" for="flexCheckMedical">
+                          Medical Dogs/Puppies
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckBehaviorDogs">
+                        <label class="form-check-label" for="flexCheckBehaviorDogs">
+                          Behavior Modification Dogs
+                        </label>
+                    </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckCats">
+                        <label class="form-check-label" for="flexCheckCats">
+                          Cats
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckKittens">
+                        <label class="form-check-label" for="flexCheckKittens">
+                          Kittens
+                        </label>
+                    </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckMomsKittens">
+                        <label class="form-check-label" for="flexCheckMomsKittens">
+                          Pregnant/Nursing Moms & Kittens
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="inputWhyFoster" class="form-label">Why are you interested in fostering?</label>
+                    <textarea class="form-control" id="WhyFoster" rows="3" ></textarea>
+                </div>
+            </div>
+            <br />
+
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <p>Foster animals often come to us with no previous history. Therefore, are you willing to tolerate potty accidents, crate training issues, litter box accidents, and/or basic training needs with the support of SAAP coordinators?</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioYesTolerant" id="flexRadioYes">
+                        <label class="form-check-label" for="flexRadioYes">
+                        Yes
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioNoTolerant" id="flexRadioNo">
+                        <label class="form-check-label" for="flexRadioNo">
+                        No
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="inputAdoptionEvent" class="form-label">SAAP regularly hosts adoption events primarily on weekends. Are you able to bring your foster to weekend events? If no please explain.</label>
+                    <textarea class="form-control" id="AdoptionEvent" rows="3" ></textarea>
+                </div>
+
+                <div class="col-md-4">
+                    <p>Have you ever fostered for SAAP or another rescue in the past?</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioYesFosteredBefore" id="flexRadioYes">
+                        <label class="form-check-label" for="flexRadioYes">
+                        Yes
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioNoFosteredBefore" id="flexRadioNo">
+                        <label class="form-check-label" for="flexRadioNo">
+                        No
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <br />
+
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <p>Have you ever given up an animal?</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioYesGivenUp" id="flexRadioYes">
+                        <label class="form-check-label" for="flexRadioYes">
+                        Yes
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioNoGivenUp" id="flexRadioNo">
+                        <label class="form-check-label" for="flexRadioNo">
+                        No
+                        </label>
+                    </div>
+                    <br/>
+                    <label for="inputGivenUpExplain" class="form-label">If YES, please explain?</label>
+                    <input type="text" class="form-control" id="inputGivenUpExplain">
+                </div>
+
+                <div class="col-md-4">
+                    <p>What reasons might you return a foster animal? Please check all that apply.</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckBarking">
+                        <label class="form-check-label" for="flexCheckBarking">
+                          Barking
+                        </label>
+                    </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckCrate">
+                        <label class="form-check-label" for="flexCheckCrate">
+                          Not crate trained
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckBehavior">
+                        <label class="form-check-label" for="flexCheckBehavior">
+                          Behavior issues
+                        </label>
+                    </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckHealth">
+                        <label class="form-check-label" for="flexCheckHealth">
+                          Health issues
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckShy">
+                        <label class="form-check-label" for="flexCheckShy">
+                          Too shy
+                        </label>
+                    </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckNotAdoptable">
+                        <label class="form-check-label" for="flexCheckNotAdoptable">
+                          Not highly adoptable
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckHouseTrained">
+                        <label class="form-check-label" for="flexCheckHouseTrained">
+                          Not house trained
+                        </label>
+                    </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckslowIntro">
+                        <label class="form-check-label" for="flexCheckSlowIntro">
+                          Slow introductions to other dogs
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="inputPreviousPet" class="form-label">List any previous and current pets including their sex, age, current health condition or cause of death and if they were/are spayed or neutered. Please give number and name of vet that spay/neutered pet for verification.</label>
+                    <textarea class="form-control" id="PreviousPet" rows="3" ></textarea>
+                </div>
+            </div>
+            <br />
+
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <p>Do you currently have any pets?</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioYesDog" id="flexRadioYes">
+                        <label class="form-check-label" for="flexRadioYes">
+                        Yes, dog(s)
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioYesCat" id="flexRadioNo">
+                        <label class="form-check-label" for="flexRadioNo">
+                        Yes, cat(s)
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioYesDogCat" id="flexRadioNo">
+                        <label class="form-check-label" for="flexRadioNo">
+                        Yes, dog(s) and cat(s)
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioNo" id="flexRadioNo">
+                        <label class="form-check-label" for="flexRadioNo">
+                        No
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioOther" id="flexRadioNo">
+                        <label class="form-check-label" for="flexRadioNo">
+                        Other
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <p>Are there children in the home?</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioYesChildren" id="flexRadioYes">
+                        <label class="form-check-label" for="flexRadioYes">
+                        Yes
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioNoChildren" id="flexRadioNo">
+                        <label class="form-check-label" for="flexRadioNo">
+                        No
+                        </label>
+                    </div>
+                    <br/>
+                    <label for="inputChildren" class="form-label">If YES, please list children and their age.</label>
+                    <input type="text" class="form-control" id="inputChildren">
+                </div>
+                
+                <div class="col-md-4">
+                    <p>Where will you foster dog be kept when you are not home?</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioInside" id="flexRadioInside">
+                        <label class="form-check-label" for="flexRadioInside">
+                        Inside
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioOutside" id="flexRadioOutside">
+                        <label class="form-check-label" for="flexRadioOutside">
+                        Outside
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioInside/Outside" id="flexRadioInside/Outside">
+                        <label class="form-check-label" for="flexRadioInside/Outside">
+                        Inside/Outside
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <br />
+
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <p>Do you own or rent your home? (We will verify your residency).</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioOwn" id="flexRadioOwn">
+                        <label class="form-check-label" for="flexRadioOwn">
+                        Own
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioRent" id="flexRadioRent">
+                        <label class="form-check-label" for="flexRadioRent">
+                        Rent
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioOther" id="flexRadioOther">
+                        <label class="form-check-label" for="flexRadioOther">
+                        Other
+                        </label>
+                    </div>
+                    <br/>
+                    <label for="inputLandlordInfo" class="form-label">If you rent, please list landlord name and phone number as we need to seek approval. If you selected Other, please explain.</label>
+                    <input type="text" class="form-control" id="inputLandlordInfo">
+                </div>
+
+                <div class="col-md-4">
+                    <p>We do all of our communication on Facebook and Facebook messenger. Do you have a Facebook account?</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioYesFB" id="flexRadioYesFB">
+                        <label class="form-check-label" for="flexRadioYesFB">
+                        Yes
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioNoFB" id="flexRadioNoFB">
+                        <label class="form-check-label" for="flexRadioNoFB">
+                        No
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="inputOtherInfo" class="form-label">Please share any other information you would like us to know about yourself.</label>
+                    <input type="text" class="form-control" id="inputOtherInfo">
+                
+                </div>
+            </div>
+            <br />
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </body>
+</html>
+
+        
+
+                
